@@ -1,0 +1,35 @@
+$headerColor: linear-gradient(135deg, #3b2667 10%, #281737 100%);
+$headerTipTap: #000000;
+
+.appHeader {
+    background-image: $headerColor;
+    z-index: 1000;
+    flex-grow: 1;
+    padding: 10px 20px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+
+    .logo {
+        background-image: url('../../images/logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50px;
+        background-position: left;
+    }
+
+    [class*="mlogo"] .logo {
+        background-position: center;
+    }
+}
+
+.appHeaderMenu {
+    background-color: $headerTipTap;
+}
+.activeAppHeaderMenu {
+    background-color: #fff !important;
+    color: #3e07ab !important;
+    .MuiListItemIcon-root {
+        color: #3e07ab !important;
+    }
+}
